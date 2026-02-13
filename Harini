@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>For You ❤️</title>
+
+<style>
+body{
+background: linear-gradient(#ff9a9e, #fad0c4);
+text-align:center;
+font-family:cursive;
+color:white;
+margin:0;
+padding:20px;
+}
+
+button{
+padding:15px 30px;
+font-size:20px;
+border:none;
+border-radius:25px;
+cursor:pointer;
+margin:15px;
+}
+
+#yes{background:#ff4d6d;color:white;}
+#no{background:black;color:white;}
+
+#letter{
+display:none;
+margin-top:30px;
+background:white;
+color:black;
+padding:20px;
+border-radius:20px;
+width:90%;
+max-width:400px;
+margin-left:auto;
+margin-right:auto;
+box-shadow:0 0 20px rgba(0,0,0,0.3);
+}
+
+img{
+margin-top:20px;
+width:200px;
+}
+</style>
+
+</head>
+<body>
+
+<h1>Will You Be My Valentine? 💖</h1>
+
+<button id="yes" onclick="yes()">Yes 😍</button>
+<button id="no" onclick="moveNo()">No 😒</button>
+
+<div id="letter">
+<h2>For You 💌</h2>
+<p>Sometimes naan yosipen… “I really got you ah?” Because once upon a time, nee enaku kedaika maata nu nenachen. But now, we’re here… loving each other. Life romba unpredictable la? 😌And when you say my name… adhu romba simple sound dhaan, but for me it feels special.“Love” nu word romba chinnathu maari irukku… because what I feel for you can’t fit inside one small word. Un mela irukra care, respect, attachment… adhu ellam words la explain panna mudiyadhu.Konjam teasing pannuven, konjam fight pannuvom, konjam ego varum… but at the end of the day, en heart always comes back to you.If future la namma marriage aagi, baby vandha kooda… I think I’ll still look at you and say,
+“Ennala innum namba mudiyala… we really ended up together.” 🥹💍i love you kaatan❤️)
+</p>
+
+<img src="https://media.giphy.com/media/3oriO0OEd9QIDdllqo/giphy.gif">
+</div>
+
+<div id="music"></div>
+
+<script>
+function yes(){
+document.getElementById("letter").style.display="block";
+
+document.getElementById("music").innerHTML =
+'<iframe width="0" height="0" src="https://www.youtube.com/embed/V7LwfY5U5WI?autoplay=1&loop=1&playlist=V7LwfY5U5WI" frameborder="0" allow="autoplay"></iframe>';
+}
+
+function moveNo(){
+var x = Math.floor(Math.random()*300);
+var y = Math.floor(Math.random()*300);
+document.getElementById("no").style.position="absolute";
+document.getElementById("no").style.left=x+"px";
+document.getElementById("no").style.top=y+"px";
+}
+</script>
+
+</body>
+</html>
