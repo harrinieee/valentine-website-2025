@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>For My Love ❤️</title>
+
+<style>
+body{
+background: linear-gradient(to right, #ff758c, #ff7eb3);
+text-align:center;
+font-family: 'Comic Sans MS', cursive;
+color:white;
+margin:0;
+padding:20px;
+overflow:hidden;
+}
+
+h1{
+font-size:30px;
+margin-top:40px;
+}
+
+button{
+padding:15px 30px;
+font-size:20px;
+border:none;
+border-radius:30px;
+cursor:pointer;
+margin:15px;
+transition:0.3s;
+}
+
+#yes{
+background:white;
+color:#ff4d6d;
+}
+
+#no{
+background:black;
+color:white;
+position:relative;
+}
+
+#letter{
+display:none;
+margin-top:30px;
+background:white;
+color:black;
+padding:20px;
+border-radius:20px;
+width:90%;
+max-width:400px;
+margin-left:auto;
+margin-right:auto;
+box-shadow:0 0 20px rgba(0,0,0,0.3);
+animation:fadeIn 1s ease-in-out;
+}
+
+#letter h2{
+color:#ff4d6d;
+}
+
+img{
+width:200px;
+margin-top:15px;
+}
+
+@keyframes fadeIn{
+from{opacity:0;}
+to{opacity:1;}
+}
+</style>
+
+</head>
+<body>
+
+<h1>Will You Be My Valentine? 💖</h1>
+
+<button id="yes" onclick="showLove()">Yes 😍</button>
+<button id="no" onclick="moveNo()">No 😒</button>
+
+<div id="letter">
+<h2>For You 💌</h2>
+
+<p>
+Time, nee enaku kedaika maata nu nenachen…  
+But now I’m so grateful that I have you in my life ❤️  
+
+Un smile paatha enaku world full bright aagidum.  
+Un kooda iruka every second enaku romba precious.  
+
+Nee iruka varaikum naan lucky.  
+Nee siricha pothum enaku santhosham.  
+
+I promise I will always care for you,  
+respect you, and stand with you no matter what.  
+
+I love you so much ❤️✨
+</p>
+
+<!-- MilkMocha Kiss GIF -->
+<img src="https://media.giphy.com/media/3oriO0OEd9QIDdllqo/giphy.gif">
+
+</div>
+
+<div id="music"></div>
+
+<script>
+function showLove(){
+document.getElementById("letter").style.display="block";
+
+document.getElementById("music").innerHTML =
+'<iframe width="0" height="0" src="https://www.youtube.com/embed/V7LwfY5U5WI?autoplay=1&loop=1&playlist=V7LwfY5U5WI" frameborder="0" allow="autoplay"></iframe>';
+}
+
+function moveNo(){
+var x = Math.floor(Math.random()*window.innerWidth-100);
+var y = Math.floor(Math.random()*window.innerHeight-100);
+var noBtn = document.getElementById("no");
+noBtn.style.position="absolute";
+noBtn.style.left=x+"px";
+noBtn.style.top=y+"px";
+}
+</script>
+
+</body>
+</html>
