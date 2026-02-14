@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>For You ❤️</title>
+<style>
+body{
+background: linear-gradient(pink, red);
+text-align:center;
+font-family:cursive;
+color:white;
+margin-top:100px;
+}
+button{
+padding:15px 30px;
+font-size:20px;
+border:none;
+border-radius:20px;
+cursor:pointer;
+margin:10px;
+}
+#yes{background:green;color:white;}
+#no{background:black;color:white;}
+</style>
+</head>
+<body>
+
+<h1>Will You Be My Valentine? 💖</h1>
+
+<button id="yes" onclick="yes()">Yes 😍</button>
+<button id="no" onclick="no()">No 😒</button>
+
+<script>
+function yes(){
+alert("Yayyyy ❤️ I Love You So Much 😘");
+}
+function no(){
+alert("You can't say no 😏 Try Again!");
+}
+</script>
+
+</body>
+</html>
